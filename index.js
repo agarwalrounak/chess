@@ -93,12 +93,12 @@ function isValidPosition(board, row, col) {
 }
 
 /**
- * Returns all legal moves for a given pawn on this board.*
- * Moves:
- * - white moves row + 1, black moves row - 1
+ * Returns all allowed moves for a given pawn on this board.
+ * Moves allowed are:
+ * - white moves row+1, black moves row-1
  * - 1 step forward if empty
  * - 2 steps forward on first move if both squares empty
- * - diagonal capture if other colour pawn is there
+ * - diagonal move and capture if other colour pawn is present there
  */
 function getPawnAllowedMoves(pawn, board) {
   const moves = [];
